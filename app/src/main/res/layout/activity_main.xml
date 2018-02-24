@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vinnovation.mohallakhabar.MainActivity">
+
+    <!--Button
+        android:id="@+id/btn_fetch_weather"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onbtnclick"
+        android:text="Fetch String"
+        app:layout_constraintEnd_toStartOf="@+id/buttonjson"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" /-->
+
+    <!--TextView
+        android:id="@+id/textDescription"
+        android:layout_width="356dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listView1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fetch_weather"
+        tools:layout_editor_absoluteX="17dp" /-->
+
+    <!--Button
+        android:id="@+id/buttonjson"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="fetchNews"
+        app:layout_constraintEnd_toStartOf="@+id/btn_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <ImageButton
+        android:id="@+id/btnnews"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
+        android:onClick="fetchNews"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/news"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnweather"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:onClick="fetchCurrentWeather"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnnews"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Button
+        android:id="@+id/btn_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="fetchWeather"
+        android:text="Get Weather"
+        app:layout_constraintBottom_toTopOf="@+id/textDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toEndOf="@+id/buttonjson"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" /-->
+
+    <!--ListView
+        android:id="@+id/listView1"
+        android:layout_width="352dp"
+        android:layout_height="422dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" /-->
+
+</android.support.constraint.ConstraintLayout>
